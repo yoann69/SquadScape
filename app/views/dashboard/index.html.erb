@@ -2,3 +2,10 @@
 <h5>Tu trouveras ici le résumé de tous tes évènements</h5>
 <h4>Evènements en cours :</h4>
 <h4>Evènements passés :</h4>
+
+
+<% if current_user %>
+  <%= "Bienvenue sur ton dashboard" %>
+<% else %>
+  <%= "Connecte-toi avant" %>
+<% end %>
